@@ -1,0 +1,359 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src:
+      url("../fonts/Roboto-Light.woff2") format("woff2"),
+      url("../fonts/Roboto-Light.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src:
+      url("../fonts/Roboto-Bold.woff2") format("woff2"),
+      url("../fonts/Roboto-Bold.woff") format("woff");
+  }
+
+  body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  .appeal {
+    padding: 30px 20px;
+  }
+
+  .appeal__disagreement {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .appeal__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding: 0 0 10px 20px;
+  }
+
+  .appeal__item {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .appeal__item::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #EC1630;
+    top: 43%;
+    left: -20px;
+    border-radius: 50%;
+  }
+
+  .appeal__form {
+    margin-bottom: 20px;
+  }
+
+  .appeal__form-download-wrapper {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .appeal__form-inctructions {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .appeal__form-download {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .appeal__form-download:first-child {
+    margin-right: 25px;
+  }
+
+  .appeal__form-link-wrapper {
+    position: relative;
+    width: 77px;
+    height: 97px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 5px solid #C4C4C4;
+  }
+
+  .appeal__form-download-icon {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-color: #ED1631;
+    border: 2px solid #C4C4C4;
+    border-radius: 50%;
+    top: -18px;
+    right: -13px;
+    background-image: url("../img/download-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 52% 40%;
+  }
+
+  .appeal__form-download-image {
+    margin-left: 4px;
+    margin-top: 4px;
+    text-align: left;
+    display: block;
+  }
+
+  .appeal__form-download-number {
+    margin: 0;
+    margin-left: 4px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #EC1630;    
+    text-align: left;
+  }
+
+  .appeal__form-download-text {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: underline;
+    color: #EC1630;
+  }
+
+  .appeal__form-upload {
+    border: none;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .appeal__form-file-wrapper {
+    position: relative;
+    width: 77px;
+    height: 97px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 5px solid #C4C4C4;
+  }
+
+  .appeal__form-upload-files-wrapper {
+    padding-top: 21px;
+  }
+
+  .appeal__form-file-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #EC1630;
+    margin-top: 32px;
+    line-height: 1;
+    display: block;
+  }
+
+  .appeal__form-upload-wrapper {
+    display: inline-block;
+    position: relative;
+  }
+
+  .appeal__form-upload-files {
+    text-align: center;
+    font-size: 0;
+    cursor: pointer;
+    width: 84px;
+    height: 109px;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .appeal__form-upload-wrapper:first-child {
+    margin-right: 13px;
+    margin-left: -5px;
+  }
+
+  .appeal__form-file-status {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-color: #ED1631;
+    border: 2px solid #C4C4C4;
+    border-radius: 50%;
+    top: -18px;
+    right: -13px;
+    background-image: url("../img/plus-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 48% 45%;
+  }
+
+  .appeal__form-file-status--uploaded {
+    background-image: url("../img/upload-icon.svg");
+  }
+
+  .appeal__form-file-number--uploaded {
+    text-align: left;
+    margin-left: 8px;
+    background-image: url("../img/upload-icon-ok.svg");
+    background-repeat: no-repeat;
+    background-position: 52% 40%;
+  }
+
+  .appeal__form-payment-wrapper {
+    flex: 0 0 100%;
+    padding: 10px;
+  }
+
+  .appeal-__form-inctructions {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .appeal__form-inctructions-cost {
+    font-size: 10px;
+    color: #EC1630;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .appeal__form-pay-button {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    width: 245px;
+    border: none;
+    background-color: #EC1630;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .appeal__important-info {
+    margin: 0;
+    padding: 10px;
+    font-size: 10px;
+    line-height: 12px;
+    border: 1px solid #EC1630;
+    background-color: #EEEEEE;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+
+    .appeal {
+      padding: 30px 40px;
+    }
+
+    .appeal__list {
+      margin-left: 20px;
+    }
+
+    .appeal__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .appeal__form-inctructions-cost {
+      font-size: 12px;
+    }
+
+    .appeal__important-info {
+      font-size: 12px;
+    }
+
+    .appeal__form-pay-button {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1140px) {
+    .appeal {
+      margin: 0 auto;
+      width: 1140px;
+      box-sizing: border-box;
+      padding: 50px 30px 50px 50px;
+    }
+
+    .appeal__disagreement {
+      margin-bottom: 21px;
+    }
+
+    .appeal__list {
+      margin-left: 24px;
+      margin-bottom: 26px;
+    }
+
+    .appeal__form {
+      margin-bottom: 27px;
+    }
+
+    .appeal__form-payment-wrapper {
+      margin: 0;
+    }
+
+    .appeal__item::after {
+      top: 41%;
+      left: -17px;
+    }
+
+    .appeal__form-download-wrapper {
+      padding: 0;
+      width: 229px;
+    }
+
+    .appeal__form-upload {
+      padding: 0;
+      margin-left: -15px;
+    }
+
+    .appeal__form-payment-wrapper {
+      padding: 0;
+      width: 274px;
+      margin-right: 41px;
+      flex: 0;
+    }
+
+    .appeal__form-inctructions { 
+      margin-bottom: 59px;
+    }
+
+    .appeal__form-inctructions-cost {
+      margin-top: -40px;
+      margin-bottom: 44px;
+    }
+
+    .appeal__important-info {
+      padding: 15px;
+      line-height: 14px;
+    }
+  }
